@@ -1,0 +1,9 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# .vscode/
+.cursor/
+build/*
+assert/
+pkg/mediamtx/
+./part2/my-react-app/node_modules
+
+
