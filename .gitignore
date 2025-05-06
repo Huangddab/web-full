@@ -4,6 +4,6 @@
 build/*
 assert/
 pkg/mediamtx/
-./part2/my-react-app/node_modules
+./part1/part1bc/my-react-app/node_modules
 
 
