@@ -1,0 +1,13 @@
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+server-->browser: HTML (SPA)
+browser->server: HTTP GET /spa.css
+server-->browser: CSS
+browser->server: HTTP GET /spa.js
+server-->browser: JS
+
+note over browser:
+  JS 执行，直接请求数据
+end note
+
+browser->server: HTTP GET /data.json
+server-->browser: JSON 数据

@@ -1,0 +1,9 @@
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: HTTP 201 Created (确认保存)
+
+note over browser:
+  JS 直接更新本地数据或重新请求
+end note
+
+browser->server: HTTP GET /data.json (可选)
+server-->browser: JSON 数据（包含新笔记）

@@ -1,0 +1,18 @@
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+server-->browser: HTTP 302 Redirect to /notes
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+server-->browser: HTML
+browser->server: HTTP GET /main.css
+server-->browser: CSS
+browser->server: HTTP GET /main.js
+server-->browser: JS
+
+note over browser:
+  JS 执行，触发 data.json 请求
+end note
+
+browser->server: HTTP GET /data.json
+server-->browser: JSON 数据（包含新笔记）
+
+
+https://www.websequencediagrams.com/
